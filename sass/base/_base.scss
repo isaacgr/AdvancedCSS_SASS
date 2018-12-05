@@ -1,0 +1,18 @@
+/* Reset Webpage Styling */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+/* Use for converting to rem */
+html {
+  font-size: 62.5%;
+}
+
+// Body sizings
+body {
+  box-sizing: border-box;
+}
