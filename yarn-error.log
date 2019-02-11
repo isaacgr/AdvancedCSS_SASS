@@ -1,8 +1,8 @@
 Arguments: 
-  /usr/bin/node /usr/local/bin/yarn compile:sass
+  /usr/bin/node /usr/local/bin/yarn live-server
 
 PATH: 
-  /home/isaac/anaconda3/bin:/home/isaac/bin:/home/isaac/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/isaac/.config/composer/vendor/bin/:/home/isaac/.config/composer/vendor/bin/:/home/isaac/.yarn/bin
+  /home/isaac/anaconda3/bin:/home/isaac/bin:/home/isaac/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/isaac/.config/composer/vendor/bin/:/home/isaac/.config/composer/vendor/bin/:/home/isaac/.yarn/bin:/home/isaac/.yarn/bin
 
 Yarn version: 
   1.5.1
@@ -2160,9 +2160,9 @@ Lockfile:
 
 Trace: 
   Error: Command failed.
-  Exit code: 1
+  Exit signal: SIGHUP
   Command: sh
-  Arguments: -c node-sass ./sass/main.scss ./css/style.css -w
+  Arguments: -c /home/isaac/github/AdvancedCSS_SASS/node_modules/.bin/live-server
   Directory: /home/isaac/github/AdvancedCSS_SASS
   Output:
   
