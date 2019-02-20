@@ -1,3 +1,10 @@
+/*
+0-600 phone
+600-900 tablet portrait
+900-1200 tablet landscape
+1200-1800 normal styles for desktop
+1800+ big desktop
+*/
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -37,6 +44,15 @@
 /* Use for converting to rem */
 html {
   font-size: 62.5%; }
+  @media (max-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
 
 body {
   box-sizing: border-box;
