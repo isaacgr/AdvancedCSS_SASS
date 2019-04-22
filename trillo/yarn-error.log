@@ -1,0 +1,61 @@
+Arguments: 
+  /usr/bin/node /usr/local/bin/yarn build:css
+
+PATH: 
+  /home/isaac/anaconda3/bin:/home/isaac/bin:/home/isaac/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/isaac/.config/composer/vendor/bin/:/home/isaac/.config/composer/vendor/bin/:/home/isaac/.yarn/bin:/home/isaac/.yarn/bin
+
+Yarn version: 
+  1.5.1
+
+Node version: 
+  9.11.2
+
+Platform: 
+  linux x64
+
+npm manifest: 
+  {
+    "name": "trillo",
+    "version": "1.0.0",
+    "description": "Landing page for Trillo",
+    "main": "index.js",
+    "scripts": {
+      "watch:sass": "node-sass sass/main.scss css/style.css -w",
+      "devserver": "live-server",
+      "start": "npm-run-all --parallel devserver watch:sass",
+      "compile:sass": "node-sass sass/main.scss css/style.comp.css",
+      "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.comp.css -o css/style.prefix.css",
+      "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
+      "build:css": "npm-run-all compile:sass prefix:css compress:css"
+    },
+    "author": "Isaac",
+    "license": "ISC",
+    "devDependencies": {
+      "autoprefixer": "^7.1.4",
+      "concat": "^1.0.3",
+      "node-sass": "^4.5.3",
+      "npm-run-all": "^4.1.1",
+      "postcss-cli": "^4.1.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: Command failed.
+  Exit code: 127
+  Command: sh
+  Arguments: -c npm-run-all compile:sass prefix:css compress:css
+  Directory: /home/isaac/github/AdvancedCSS_SASS/trillo
+  Output:
+  
+      at ProcessTermError.MessageError (/usr/local/lib/node_modules/yarn/lib/cli.js:186:110)
+      at new ProcessTermError (/usr/local/lib/node_modules/yarn/lib/cli.js:226:113)
+      at ChildProcess.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:30281:17)
+      at ChildProcess.emit (events.js:180:13)
+      at maybeClose (internal/child_process.js:936:16)
+      at Process.ChildProcess._handle.onexit (internal/child_process.js:220:5)
