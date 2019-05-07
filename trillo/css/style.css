@@ -62,8 +62,7 @@ body {
 
 .hotel-view {
   background-color: #fff;
-  flex: 1;
-  height: 80rem; }
+  flex: 1; }
 
 .logo {
   height: 3.25rem;
@@ -213,6 +212,22 @@ body {
     font-size: 1.2rem;
     display: flex;
     align-items: center; }
+  .overview__rating {
+    background-color: var(--color-primary);
+    margin-left: 3rem;
+    color: #fff;
+    align-self: stretch;
+    padding: 0 2.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
+  .overview__rating-average {
+    font-size: 2.25rem;
+    font-weight: 300; }
+  .overview__rating-count {
+    font-size: 0.8rem;
+    text-transform: uppercase; }
 
 .btn-inline {
   border: none;
@@ -229,6 +244,22 @@ body {
   .btn-inline:focus {
     outline: none;
     animation: pulsate 1s infinite; }
+
+.detail {
+  display: flex;
+  padding: 4.5rem;
+  background-color: var(--color-grey-light-1);
+  border-bottom: 1px solid var(--color-grey-light-2); }
+
+.description {
+  flex: 0 0 60%;
+  margin-right: 4.5rem;
+  background-color: #fff;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+  font-size: 1.4rem; }
+
+.user-reviews {
+  flex: 1; }
 
 @keyframes pulsate {
   0% {
